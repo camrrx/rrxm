@@ -1,0 +1,143 @@
+.home-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+
+	.background-home-container {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: space-between;
+		background-size: cover;
+		background: linear-gradient(
+			90deg,
+			rgba(121, 8, 59, 0.5) 0%,
+			rgba(7, 15, 74, 0.5) 100%
+		);
+		width: 100%;
+		height: 100%;
+
+		.header-container {
+			height: 80px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.logo-rrx {
+				display: flex;
+				height: 45px;
+				padding-left: 1rem;
+				padding-top: 1rem;
+				opacity: 0.5;
+			}
+			.title-container {
+				align-items: center;
+				display: flex;
+
+				.title {
+					margin-left: 12px;
+					font-size: 3rem;
+					color: white;
+					font-family: "Secular One", sans-serif;
+					opacity: 0.8;
+				}
+				.text-movie {
+					padding-top: 1rem;
+				}
+				@media (max-width: 400px) {
+					.text-movie {
+						display: none;
+					}
+					.logo-rrx {
+						height: 35px;
+					}
+				}
+				p {
+					margin-left: 12px;
+					color: white;
+				}
+			}
+
+			.header-end {
+				margin-right: 12px;
+				display: flex;
+				align-items: center;
+				margin-top: 12px;
+
+				button {
+					border: 1px solid white;
+					background: none;
+					color: white;
+					cursor: pointer;
+				}
+
+				button:hover {
+					background: linear-gradient(
+						90deg,
+						rgba(121, 8, 59, 1) 0%,
+						rgba(7, 15, 74, 1) 100%
+					);
+					color: white;
+				}
+			}
+		}
+		.search-home-container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -100px;
+			margin-left: -200px;
+			width: 400px;
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+
+			.search-input {
+				height: 40px;
+				width: 200px;
+				border: 2px solid white;
+				background: rgba(0, 0, 0, 0.231);
+				color: white;
+				border-radius: 15px;
+				outline: none;
+				padding-inline-start: 3rem;
+				font-size: 1rem;
+
+				&::-webkit-input-placeholder {
+					color: white; /*Change the placeholder color*/
+					opacity: 0.3; /*Change the opacity between 0 and 1*/
+				}
+			}
+
+			.search-button {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				border: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				background-color: rgba(255, 255, 255, 0.5);
+
+				&:hover {
+					transition: 0.4s;
+					background-color: rgba(0, 0, 0, 0.231);
+					color: white;
+					transform: rotate(90deg);
+				}
+			}
+
+			.click-start {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.icons {
+		fill: white;
+	}
+}

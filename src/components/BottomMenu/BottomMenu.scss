@@ -1,0 +1,26 @@
+.bottomMenu-container {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.bottomMenu-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.9);
+		margin-bottom: 10px;
+		margin-inline: 100px;
+		border-radius: 20px;
+		height: 3vh;
+		padding: 10px;
+
+		.icon-bottomMenu {
+			height: 25px;
+			width: 25px;
+			fill: rgb(255, 255, 255, 0.6);
+		}
+		.icon-bottomMenu.active {
+			fill: rgba(121, 8, 59, 0.8);
+		}
+	}
+}

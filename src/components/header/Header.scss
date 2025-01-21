@@ -1,0 +1,12 @@
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo-rrx-home {
+		display: flex;
+		height: 45px;
+		padding-left: 1rem;
+		padding-top: 1rem;
+	}
+}

@@ -1,0 +1,12 @@
+.app-design {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+.bottom-menu {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+}
