@@ -59,7 +59,7 @@ export const getMovies = async (titleMovie: string): Promise<Movie[]> => {
 
 export const getMovieCredits = async (
 	movie_id: number
-): Promise<Credits | null> => {
+): Promise<Credits | undefined> => {
 	try {
 		const res = await axios.get<Credits>(
 			`${API_URL}/movie/${movie_id}/credits?${API_KEY}&language=fr-FR`,
@@ -68,7 +68,7 @@ export const getMovieCredits = async (
 		return res.data;
 	} catch (e) {
 		console.error(e);
-		return null;
+		return undefined;
 	}
 };
 

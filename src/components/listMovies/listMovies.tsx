@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./listMovies.scss";
 import { useDispatch } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
+import MovieNote from "../movieModal/movieModal";
 
 // Définition des types pour les props et les états
 interface Movie {
@@ -77,9 +78,19 @@ export const ListMovies: React.FC<ListMoviesProps> = props => {
 					<p>No movie available...</p>
 				)}
 			</div>
-
-		
-		</div>
+			{
+				//If isDisplay is true, display the MovieNote component related to the movie selected
+				movie_id ? (
+					<div className="movie-note">
+						<MovieNote
+							movie_id={Number(movie_id)}
+							title_movie={title_movie}></MovieNote>
+					</div>
+				) : (
+					""
+				)
+			}
+		</div>	
 	);
 };
 

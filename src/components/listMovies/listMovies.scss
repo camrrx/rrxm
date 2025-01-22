@@ -5,9 +5,9 @@
 	border: 1px;
 	display: flex;
 	justify-content: space-evenly;
-	overflow: scroll;
-	gap: 1rem;
+	overflow: auto;
 	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.8);
 
 	.card {
 		max-width: 400px;
@@ -16,7 +16,7 @@
 		border-radius: 8px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
 			rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-		margin-bottom: 1rem;
+		margin-block: 0.5rem;
 
 		.poster-container {
 			height: 400px;
