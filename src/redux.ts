@@ -15,7 +15,7 @@ const movieSelectedSlice = createSlice({
 	name: "movieSelected",
 	initialState: {} as MovieState,
 	reducers: {
-		addMovie: (state, action: PayloadAction<Movie>) => {
+		addMovie: (_state, action: PayloadAction<Movie>) => {
 			return action.payload;
 		},
 		removeMovie: () => {
@@ -42,7 +42,7 @@ const getResearchSlice = createSlice({
 	name: "movieResearch",
 	initialState: "" as ResearchState,
 	reducers: {
-		getMovie: (state, action: PayloadAction<{ research: string }>) => {
+		getMovie: (_state, action: PayloadAction<{ research: string }>) => {
 			return action.payload.research;
 		},
 	},
@@ -62,7 +62,7 @@ const userLoginSlice = createSlice({
 		successLogin: false,
 	} as LoginState,
 	reducers: {
-		getLoginData: (state, action: PayloadAction<LoginState>) => {
+		getLoginData: (_state, action: PayloadAction<LoginState>) => {
 			return {
 				usernameLogin: action.payload.usernameLogin,
 				successLogin: action.payload.successLogin,
