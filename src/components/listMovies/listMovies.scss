@@ -34,7 +34,7 @@
 			padding: 1rem;
 
 			.button-select {
-				border-radius: 15px;
+				border-radius: 12px;
 				height: 50px;
 				border: none;
 				background: linear-gradient(
@@ -49,7 +49,6 @@
 			}
 			.button-select:hover {
 				transition: 0.5sec;
-				border-radius: 40px;
 				opacity: 0.9;
 				background: linear-gradient(
 					90deg,

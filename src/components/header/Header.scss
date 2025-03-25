@@ -2,11 +2,22 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	margin-inline: 1rem;
 	.logo-rrx-home {
 		display: flex;
 		height: 45px;
-		padding-left: 1rem;
 		padding-top: 1rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.header-container {
+		&__toggle {
+			display: none;
+		}
+
+		.logo-rrx-home {
+			height: 20px;
+		}
 	}
 }

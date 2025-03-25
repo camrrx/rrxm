@@ -1,6 +1,7 @@
 import "./Header.scss";
 import logo from "../../assets/rrxLogo.png";
 import { Link } from "react-router-dom";
+import ToggleComponent from "../../componentsBasic/Toggle/toggle";
 
 const Header = () => {
 	return (
@@ -11,6 +12,9 @@ const Header = () => {
 						<img className="logo-rrx-home" src={logo} alt="" />
 					</div>
 				</Link>
+			</div>
+			<div className="header-container__toggle">
+				<ToggleComponent />
 			</div>
 		</div>
 	);
